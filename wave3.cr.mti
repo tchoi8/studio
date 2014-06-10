@@ -1,0 +1,14 @@
+C:/.Xilinx/studio/counter/src/first_counter.v {1 {vlog -work work C:/.Xilinx/studio/counter/src/first_counter.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module first_counter
+
+Top level modules:
+	first_counter
+
+} {} {}} C:/.Xilinx/studio/counter/src/first_counter_tb.v {0 {vlog -work work {C:\.Xilinx\studio\counter\src\first_counter_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+** Error: C:\.Xilinx\studio\counter\src\first_counter_tb.v(1): Missing ';' from include file path spec.
+** Error: C:\.Xilinx\studio\counter\src\first_counter_tb.v(1): Cannot open `include file "first_counter.v".
+-- Compiling module first_counter_tb
+
+} {3.0 5.0} {}}

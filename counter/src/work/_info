@@ -1,0 +1,44 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\.Xilinx\studio
+vfirst_counter
+!i10b 1
+!s100 K:jM9ZSgYl=F0T?VCzQUd2
+IjXjI]VR9894az^[gCFfgG1
+Z1 VGMIYGl0i:6:Tm:bfObkLD3
+Z2 dC:\.Xilinx\studio\counter\src
+Z3 w1401403134
+Ffirst_counter.v
+Z4 8C:/.Xilinx/studio/counter/src/first_counter_tb.v
+Z5 FC:/.Xilinx/studio/counter/src/first_counter_tb.v
+L0 9
+Z6 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z7 !s108 1401404324.518000
+Z8 !s107 first_counter.v|C:/.Xilinx/studio/counter/src/first_counter_tb.v|
+Z9 !s90 -reportprogress|300|-work|work|C:/.Xilinx/studio/counter/src/first_counter_tb.v|
+!s101 -O0
+Z10 o-work work -O0
+vfirst_counter_tb
+!i10b 1
+Z11 !s100 NZA4bne1WFldHz:4`Rj790
+Z12 IULmKeik8bb`@nmTiY5[Qz3
+Z13 ViHACe[nSZM`Il0bkK_E5j2
+R2
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+R10

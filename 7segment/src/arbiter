@@ -1,0 +1,95 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00853080 .scope module, "arbiter_tb" "arbiter_tb" 2 29;
+ .timescale 0 0;
+v006D9BC8_0 .var "clock", 0 0;
+v006D9C20_0 .net "gnt0", 0 0, v006FAE30_0; 1 drivers
+v006D9C78_0 .net "gnt1", 0 0, v006FAE88_0; 1 drivers
+v006D9CD0_0 .var "req0", 0 0;
+v006D9D28_0 .var "req1", 0 0;
+v006D9D80_0 .var "reset", 0 0;
+S_006D9AE8 .scope module, "U0" "arbiter" 2 55, 2 1, S_00853080;
+ .timescale 0 0;
+v006D9B70_0 .net "clock", 0 0, v006D9BC8_0; 1 drivers
+v006FAE30_0 .var "gnt_0", 0 0;
+v006FAE88_0 .var "gnt_1", 0 0;
+v006FAEE0_0 .net "req_0", 0 0, v006D9CD0_0; 1 drivers
+v006FAF38_0 .net "req_1", 0 0, v006D9D28_0; 1 drivers
+v006FAF90_0 .net "reset", 0 0, v006D9D80_0; 1 drivers
+E_008545F0 .event posedge, v006FAF90_0, v006D9B70_0;
+    .scope S_006D9AE8;
+T_0 ;
+    %wait E_008545F0;
+    %load/v 8, v006FAF90_0, 1;
+    %jmp/0xz  T_0.0, 8;
+    %ix/load 0, 1, 0;
+    %assign/v0 v006FAE30_0, 0, 0;
+    %ix/load 0, 1, 0;
+    %assign/v0 v006FAE88_0, 0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/v 8, v006FAEE0_0, 1;
+    %jmp/0xz  T_0.2, 8;
+    %ix/load 0, 1, 0;
+    %assign/v0 v006FAE30_0, 0, 1;
+    %ix/load 0, 1, 0;
+    %assign/v0 v006FAE88_0, 0, 0;
+    %jmp T_0.3;
+T_0.2 ;
+    %load/v 8, v006FAF38_0, 1;
+    %jmp/0xz  T_0.4, 8;
+    %ix/load 0, 1, 0;
+    %assign/v0 v006FAE30_0, 0, 0;
+    %ix/load 0, 1, 0;
+    %assign/v0 v006FAE88_0, 0, 1;
+T_0.4 ;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_00853080;
+T_1 ;
+    %vpi_call 2 35 "$monitor", "req0=%b,req1=%b,gnt0=%b,gnt1=%b", v006D9CD0_0, v006D9D28_0, v006D9C20_0, v006D9C78_0;
+    %set/v v006D9BC8_0, 0, 1;
+    %set/v v006D9D80_0, 0, 1;
+    %set/v v006D9CD0_0, 0, 1;
+    %set/v v006D9D28_0, 0, 1;
+    %delay 5, 0;
+    %set/v v006D9D80_0, 1, 1;
+    %delay 15, 0;
+    %set/v v006D9D80_0, 0, 1;
+    %delay 10, 0;
+    %set/v v006D9CD0_0, 1, 1;
+    %delay 10, 0;
+    %set/v v006D9CD0_0, 0, 1;
+    %delay 10, 0;
+    %set/v v006D9D28_0, 1, 1;
+    %delay 10, 0;
+    %set/v v006D9D28_0, 0, 1;
+    %delay 10, 0;
+    %set/v v006D9D28_0, 1, 1;
+    %set/v v006D9CD0_0, 1, 1;
+    %delay 10, 0;
+    %set/v v006D9D28_0, 0, 1;
+    %set/v v006D9CD0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 48 "$finish";
+    %end;
+    .thread T_1;
+    .scope S_00853080;
+T_2 ;
+    %delay 5, 0;
+    %load/v 8, v006D9BC8_0, 1;
+    %inv 8, 1;
+    %set/v v006D9BC8_0, 8, 1;
+    %jmp T_2;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "arbiter.v";

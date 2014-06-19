@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-06-18T14:16:12</DateModified>
+  <DateModified>2014-06-12T10:59:53</DateModified>
   <ModuleName>mojo_top</ModuleName>
-  <SummaryTimeStamp>2013-04-16T10:54:27</SummaryTimeStamp>
-  <SavedFilePath>C:/.Xilinx/studio/mojo-base-project-master/iseconfig/mojo_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/.Xilinx/studio/mojo-base-project-master/syn\</ImplementationReportsDirectory>
-  <DateInitialized>2012-11-08T12:38:20</DateInitialized>
+  <SummaryTimeStamp>2014-06-12T10:57:24</SummaryTimeStamp>
+  <SavedFilePath>C:/.Xilinx/studio/mojo-base-project-master2/iseconfig/avr_interface.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/.Xilinx/studio/mojo-base-project-master2/syn</ImplementationReportsDirectory>
+  <DateInitialized>2014-06-12T10:59:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
